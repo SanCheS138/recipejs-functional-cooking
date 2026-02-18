@@ -327,3 +327,62 @@ main {
 .substeps-list .substeps-list li {
     font-size: 0.85rem;
 }
+/* Search Container */
+.search-container {
+    max-width: 500px;
+    margin: 1.5rem auto 0;
+    position: relative;
+}
+
+#search-input {
+    width: 100%;
+    padding: 0.75rem 2.5rem 0.75rem 1rem; /* extra right padding for clear button */
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+#search-input:focus {
+    outline: none;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
+.clear-btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Recipe Counter */
+.recipe-info {
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+/* Favorite Button on Cards */
+.recipe-card {
+    position: relative; /* required for absolute positioning inside */
+}
+
+.favorite-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1.4rem;
+    transition: transform 0.2s ease;
+}
+
+.favorite-btn:hover {
+    transform: scale(1.1);
+}
